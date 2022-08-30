@@ -1,0 +1,61 @@
+site_name: Weights and Biases
+site_url: https://weights_and_biases_demo.com/
+nav:
+  - Home: 'index.md'
+  - 'Developer Guide': 
+    - 'Getting Started': './developer_guide/getting_started.md'
+    - 'Model Registry': './developer_guide/model_registry.md'
+  - Random Code: bubble_sort.md 
+
+repo_url: https://github.com/squidfunk/mkdocs-material
+
+theme:
+  name: material
+  features:
+    - content.code.annotate 
+    - content.tabs.link
+    - navigation.expand
+    - navigation.tabs.sticky
+    - navigation.top
+    - header.autohide
+  palette:
+    primary: black
+
+  logo: assets/Gold_Dots_Black_Bkg.png
+  favicon: assets/Gold_Dots_Black_Bkg.png
+  icon:
+    repo: fontawesome/brands/github
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/wandb
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/weights-biases/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/weights_biases
